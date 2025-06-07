@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "8307dd4d-c7a1-49db-a983-b2db2e0fd0b4",
+		"name": "FirmaSyPagoWebhook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11359031"
+	},
+	"item": [
+		{
+			"name": "SignatureTest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Signature",
+						"value": "MEQCIFqKW9DHVKSY0MlX4qmuWZ+T7kxhd6RNngZ78WsRRzQcAiAsunRu/1tjV1QlL+2UVGDXN6tmRGtSUhn9wgimkhZtFg==",
+						"type": "text"
+					},
+					{
+						"key": "X-Signature-Nonce",
+						"value": "1749307586542",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"internal_id\":\"YJX8CZPS98WTK7MA\",\"transaction_id\":\"CF314FC288D3\",\"ref_ibp\":\"99992025060710462534703822\",\"group_id\":\"YJX8CZPS98WTK7MA\",\"operation_date\":\"2025-06-07T10:46:24.712000\",\"amount\":{\"type\":\"NONE\",\"amt\":12639.5,\"pay_amt\":12639.5,\"currency\":\"VES\",\"rate\":0.0,\"use_day_rate\":false},\"receiving_user\":{\"name\":\"Prueba de pago\",\"document_info\":{\"type\":\"V\",\"number\":\"8569996\"},\"account\":{\"bank_code\":\"0105\",\"type\":\"CELE\",\"number\":\"04140168596\"}},\"status\":\"ACCP\",\"rejected_code\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5900/signature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5900",
+					"path": [
+						"signature"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "js-signature-verifier",
+    "version": "1.0.0",
+    "description": "JS server to verify SyPago signatures",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
