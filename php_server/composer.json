@@ -1,0 +1,19 @@
+{
+    "name": "sypago/webhook-validator",
+    "description": "Validador de firmas digitales para webhooks de SyPago",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "ext-openssl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SyPago\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "SyPago",
+        "email": "developer@sypago.com"
+    }]
+}
